@@ -1,0 +1,107 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(156, 243, 156);
+}
+
+#pannel {
+    overflow: hidden;
+    width: 80%;
+    height: 80%;
+    background-color: #ffff;
+    border-radius: 5px;
+}
+
+.pannel-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30%;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(39, 101, 39);
+}
+
+.pannel-top .elem {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #ffff;
+    font-size: 14px;
+    font-weight: 500;    
+}
+
+.pannel-top .elem .box {
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: #ffff;
+    color: rgb(37, 126, 77);
+    font-size: 17px;
+    font-weight: 700;    
+}
+
+.elem h2 {
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.pannel-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 13px;
+    padding: 20px;
+    width: 100%;
+    height: calc(100% - 70px);
+}
+
+.pannel-bottom .bubble {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(61, 147, 61);
+    border-radius: 50%;
+    color: #ffff;
+    font-weight: 400;
+}
+
+.bubble:hover {
+    cursor: pointer;
+    background-color: rgb(41, 101, 41);
+}
+
+#gameOver {
+    color: red;
+}
