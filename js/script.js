@@ -19,7 +19,8 @@ function updateTimer() {
             document.getElementById("timerVal").textContent = timer
         } else {
             clearInterval(timerInterval);
-            document.querySelector(".pannel-bottom").innerHTML = `<h1 id="gameOver">Game Over</h1>`;
+            document.querySelector(".pannel-bottom").innerHTML = `<div class="gameOver"><h1 id="gameOver">Game Over</h1><br> 
+            <div class="restartBtn" onclick="refreshGame()"><a>Restart</a></div></div>`;
             document.getElementById("targetVal").textContent = 0;
             
         }
@@ -34,6 +35,10 @@ function makeBubble() {
   }
 
   document.querySelector(".pannel-bottom").innerHTML = clutter;
+}
+
+function refreshGame() {
+    location.reload();
 }
 
 document.querySelector(".pannel-bottom").addEventListener("click", function(bubble) {

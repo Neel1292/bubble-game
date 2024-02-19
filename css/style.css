@@ -24,6 +24,22 @@ ul {
 	list-style: none;
 }
 
+.restartBtn {
+    display: block;
+    background-color: rgb(61, 147, 61);
+    border: 1px solid transparent;
+    padding: 15px 20px;
+    border-radius: 5px;
+    color:white;
+}
+
+.restartBtn:hover {
+    background-color: transparent;
+    border: 1px solid rgb(61, 147, 61);
+    color: rgb(61, 147, 61);
+    border-radius: 5px;
+}
+
 .main {
     display: flex;
     align-items: center;
@@ -104,4 +120,9 @@ ul {
 
 #gameOver {
     color: red;
+}
+
+.gameOver {
+    text-align: center;
+    flex-direction: column;
 }
